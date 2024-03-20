@@ -48,8 +48,56 @@ fun word(text:String):Int {
 fun extractString(name:String){
     var slice=name.slice(2..5)
     println(slice)
-}
 
+
+
+reverseString("leaders")
+inputString("racecar")
+vowels("principal")
+
+
+
+var text = "my name is Adal"
+println(text.length)
+println(text.toUpperCase())
+println(text.toLowerCase())
+
+var txt1= "i love kotlin"
+var txt2= "i love kotlin"
+println(txt1.compareTo(txt2))
+
+var txt = "please clean your class"
+println(txt.indexOf("your"))
+
+
+
+
+
+
+}
+fun reverseString(word:String){
+    var newWord= word.reversed()
+    println(newWord)
+}
+fun inputString(word:String){
+    val newInputString=word.reversed()
+    if(word==word.reversed()){
+        println("palidrome string.")
+    }
+    else{
+        println("Not a palidrome string.")
+    }
+}
+fun vowels(word:String){
+    var number = 0
+    var vowels = listOf<Char>('a','e','i','o','u')
+    for(x in word){
+        if(x in vowels) {
+            number++
+        }
+    }
+    println(number)
+}
 
 
 
