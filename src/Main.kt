@@ -28,6 +28,9 @@ fun main() {
     sentence("Kibaki was the second president of Kenya")
     word("hello")
     extractString("leaders")
+
+    sum(45,56)
+    power(9,3)
 }
 
 //write a function that takes two intergers as a parameter and returns the sum
@@ -98,6 +101,31 @@ fun vowels(word:String){
     }
     println(number)
 }
+fun cities (cities:Array<String>) {
+    cities.forEach { city ->
+        println(city.capitalize())
+    }
+}
+//Write a Kotlin function named sum that takes two integers as parameters and returns their sum. Print the result.
+    fun sum(num3:Int,num4:Int):Int{
+        var sum=num3 +num4
+        return sum
+    }
+fun names(name1:String,name2:String,name3:String,name4:String){
+    var nameArray = arrayOf(name1,name2,name3,name4)
+    println(nameArray.contentToString())}
+
+//Write a Kotlin function named power that takes two parameters, base and exponent, and returns the result of raising
+// the base to the power of the exponent. Print the result.
+fun power(base:Int,exponent:Int){
+    var result=base*exponent
+    println(result)
+}
+
+
+
+
+
 
 
 
